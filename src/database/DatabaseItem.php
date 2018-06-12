@@ -26,6 +26,7 @@ abstract class DatabaseItem
         'index' => 'Index',
         'view' => 'View',
         'view_definition' => 'ViewDefinition',
+        'sequence' => 'Sequence',
         'query' => 'Query'
     );
     
