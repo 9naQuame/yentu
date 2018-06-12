@@ -212,7 +212,6 @@ class Postgresql extends AbstractDatabaseManipulator
                         'ALTER TABLE %s ALTER COLUMN "%s" SET DEFAULT nextval(\'%s\')', $this->buildTableName($details['table'], $details['schema']), $details['column'], $sequence
                 )
         );
-        $this->query("DROP SEQUENCE IF EXISTS $sequence");
     }
 
     protected function _dropAutoPrimaryKey($details) {
